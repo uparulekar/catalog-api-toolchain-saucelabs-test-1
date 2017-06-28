@@ -64,6 +64,17 @@ public class FreqTable {
         return total;
     }
 
+    private static int sum1(int[] list) {
+        assert list != null : "Failed precondition, sum: parameter list" +
+            " may not be null.";
+            int max = 0;
+        int total = 0;
+        for(int x : list){
+            total += x;
+        }
+        return total/max;
+    }
+
 
     // pre: url != null
     // Connect to the URL specified by the String url.
