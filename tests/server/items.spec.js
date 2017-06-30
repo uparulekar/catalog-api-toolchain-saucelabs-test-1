@@ -71,7 +71,7 @@
             //};
             
             items.dbOptions( reqMock, resMock );
-            assert( resMock.send.lastCall.calledWith( { msg: 'Successfully created database and populated 1!' } ), 'Unexpected argument: ' + JSON.stringify(resMock.send.lastCall.args) );
+            assert( resMock.send.lastCall.calledWith( { msg: 'Successfully created database and populated!' } ), 'Unexpected argument: ' + JSON.stringify(resMock.send.lastCall.args) );
         });
         
         it('DB not created - cloudant failure', function() {
